@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>漢・黒川 サポーター募集</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@700;900&family=Klee+One:wght@400;600&display=swap">
+<style>
+:root{
+  --bar-bg:#1f1d1b; --bar-ink:#f4efe6; --bar-acc:#e0b34a;
+  --pa-bg:#f1ece1; --pa-ink:#1c1a17; --pa-sub:#625b52; --pa-rule:#cbc2b1; --pa-red:#b2281b; --pa-panel:#e7dfcd;
+  --pb-bg:#fbfbf9; --pb-ink:#172441; --pb-sub:#5b6579; --pb-rule:#d3d8e1; --pb-acc:#c48f12; --pb-panel:#eef1f6;
+  --pc-bg:#fbf8f0; --pc-line:#ddd3bf; --pc-ink:#2e2925; --pc-sub:#6b6258; --pc-red:#a9352a; --pc-panel:#f1ebde;
+  --tag-bg:#fff3c4; --tag-ink:#6b4d00; --tag-line:#e2c35b;
+  --gothic:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  --mincho-a:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho","MS Mincho",serif;
+  --mincho-b:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho","MS Mincho",serif;
+  --hand:"Klee One","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--pa-bg);color:var(--pa-ink);font-family:var(--gothic);font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body[data-pattern="b"]{background:var(--pb-bg);color:var(--pb-ink)}
+body[data-pattern="c"]{background:var(--pc-bg);color:var(--pc-ink)}
+h1,h2,h3,p,dl,dd,dt,ul,ol{margin:0}
+h1,h2,h3{text-wrap:balance}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-offset:3px}
+.wrap{max-width:720px;margin-inline:auto;padding-inline:20px}
+.tag{display:inline-block;font-family:var(--gothic);font-size:11px;line-height:1;padding:4px 6px;background:var(--tag-bg);color:var(--tag-ink);border:1px solid var(--tag-line);border-radius:2px;font-weight:700;letter-spacing:.06em;vertical-align:middle;margin-inline-start:6px;white-space:nowrap}
+.note{font-family:var(--gothic);font-size:12px;line-height:1.7;opacity:.72;border-left:2px solid currentColor;padding-left:10px}
+.ph{border:1px dashed currentColor;opacity:.45;max-width:100%;display:grid;place-items:center;font-family:var(--gothic);font-size:12px;letter-spacing:.12em;text-align:center;padding:12px;border-radius:2px}
+.links{display:grid;gap:8px;font-size:14px}
+.links a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.links span{opacity:.7;font-size:12px;display:block;word-break:break-all}
+.contact{display:grid;gap:4px;font-size:13px;line-height:1.7}
+.contact .num{font-variant-numeric:tabular-nums;user-select:all}
+
+/* 叩き台バー */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bar-bg);color:var(--bar-ink);padding:8px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:var(--gothic);font-size:12px;line-height:1.5}
+.bar__label{font-weight:700;letter-spacing:.08em;white-space:nowrap}
+.bar__btns{display:flex;gap:6px}
+.bar button{font-family:var(--gothic);font-size:12px;line-height:1;padding:7px 10px;border:1px solid rgba(255,255,255,.35);background:transparent;color:inherit;border-radius:3px;cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--bar-acc);color:#1f1d1b;border-color:var(--bar-acc);font-weight:700}
+.bar__note{opacity:.75;flex-basis:100%}
+@media (min-width:760px){.bar__note{flex-basis:auto;margin-left:auto}}
+
+/* ===== 案A 漢 ===== */
+.pa{background:var(--pa-bg);color:var(--pa-ink)}
+.pa .serif{font-family:var(--mincho-a)}
+.pa-hero{padding-block:36px 44px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 22px;align-items:start}
+.pa-title{display:flex;flex-direction:column;align-items:center;gap:.04em;font-family:var(--mincho-a);font-weight:800;font-size:clamp(56px,13vw,100px);line-height:1;width:1em;margin-top:.06em}
+.pa-title span{display:block;height:1em;line-height:1;text-align:center}
+.pa-title .dot{height:.5em;line-height:.5em}
+.pa-yoko{display:grid;gap:28px;min-width:0}
+.pa-yoko__top{display:grid;gap:10px}
+.pa-eyebrow{font-size:12px;letter-spacing:.24em;color:var(--pa-red);font-weight:700}
+.pa-tatesub{font-size:14px;font-weight:500;letter-spacing:.08em;color:var(--pa-sub);line-height:1.7}
+.pa-yoko__bottom{display:grid;gap:14px}
+.pa-price{font-family:var(--mincho-a);font-weight:800;font-size:clamp(26px,6.6vw,40px);line-height:1.2;letter-spacing:.04em}
+.pa-lede{font-family:var(--mincho-a);font-weight:600;font-size:clamp(17px,4.4vw,22px);line-height:1.6}
+.pa-small{font-size:13px;color:var(--pa-sub);line-height:1.7}
+.pa-btn{display:inline-flex;align-items:center;justify-content:center;background:var(--pa-ink);color:var(--pa-bg);font-family:var(--mincho-a);font-weight:800;font-size:17px;letter-spacing:.14em;padding:15px 26px;text-decoration:none;border-radius:2px;border:2px solid var(--pa-ink);width:fit-content;max-width:100%;transition:background .15s,border-color .15s}
+.pa-btn:hover{background:var(--pa-red);border-color:var(--pa-red)}
+.seal{width:60px;height:60px;border:3px solid var(--pa-red);color:var(--pa-red);display:grid;place-items:center;writing-mode:vertical-rl;font-family:var(--mincho-a);font-weight:800;font-size:20px;letter-spacing:.08em;line-height:1;transform:rotate(-5deg);box-shadow:inset 0 0 0 1px rgba(178,40,27,.35);border-radius:3px;opacity:.9;flex:none}
+.pa-sec{padding-block:40px;border-top:1px solid var(--pa-rule);display:grid;gap:20px}
+.pa-sec h2{font-family:var(--mincho-a);font-size:clamp(24px,5.2vw,32px);font-weight:800;letter-spacing:.04em;line-height:1.4}
+.pa-sec h3{font-family:var(--mincho-a);font-size:18px;font-weight:800;letter-spacing:.04em;color:var(--pa-sub)}
+.pa-quote{font-family:var(--mincho-a);font-size:clamp(19px,4.6vw,25px);font-weight:600;line-height:1.85;letter-spacing:.02em;max-width:34em}
+.pa-body{display:grid;gap:16px;max-width:36em}
+.pa-bio{display:grid;grid-template-columns:1fr;gap:20px}
+@media (min-width:560px){.pa-bio{grid-template-columns:1fr 168px;align-items:start}}
+.pa-bio .ph{aspect-ratio:4/5;width:min(100%,180px)}
+.pa-tl{display:grid;grid-template-columns:4.6em 1fr;gap:10px 14px}
+.pa-tl dt{font-family:var(--mincho-a);font-weight:800;color:var(--pa-red);font-variant-numeric:tabular-nums;font-size:18px;line-height:1.7}
+.pa-tl dd{line-height:1.8}
+.pa-pillars{display:grid;grid-template-columns:5.2em 1fr;gap:10px 14px}
+.pa-pillars dt{font-family:var(--mincho-a);font-weight:800;font-size:17px;line-height:1.8}
+.pa-pillars dd{line-height:1.8}
+.pa-terms{display:grid;gap:0}
+.pa-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;padding-block:11px;border-bottom:1px solid var(--pa-rule)}
+.pa-terms li:first-child{border-top:1px solid var(--pa-rule)}
+.pa-terms b{font-family:var(--mincho-a);font-weight:800;color:var(--pa-sub);font-size:15px}
+.pa-cta{display:grid;gap:18px;justify-items:start}
+.pa-foot{padding-block:36px 64px;border-top:2px solid var(--pa-ink);font-size:13px;color:var(--pa-sub);display:grid;gap:22px}
+.pa-foot h3{font-family:var(--gothic);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--pa-ink)}
+.pa-foot .block{display:grid;gap:8px}
+
+/* ===== 案B 実績 ===== */
+.pb{background:var(--pb-bg);color:var(--pb-ink)}
+.pb-hero{padding-block:40px 36px;display:grid;gap:22px}
+.pb-eyebrow{font-size:12px;letter-spacing:.18em;font-weight:700;color:var(--pb-sub)}
+.pb-hero h1{font-family:var(--mincho-b);font-weight:900;font-size:clamp(30px,7.6vw,50px);line-height:1.3;letter-spacing:.02em}
+.pb-lede{font-size:16px;line-height:1.9;max-width:36em}
+.pb-tiles{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--pb-ink);border-bottom:1px solid var(--pb-rule)}
+.pb-tile{padding:16px 10px 14px 0;border-right:1px solid var(--pb-rule);display:grid;gap:8px;align-content:start;min-width:0}
+.pb-tile + .pb-tile{padding-left:10px}
+.pb-tile:last-child{border-right:0}
+@media (max-width:479px){.pb-tiles{grid-template-columns:1fr 1fr}.pb-tile:nth-child(2){border-right:0}.pb-tile:nth-child(3){padding-left:0;border-top:1px solid var(--pb-rule)}.pb-tile:nth-child(4){border-top:1px solid var(--pb-rule)}}
+.pb-tile .num{font-family:var(--mincho-b);font-weight:900;font-size:clamp(26px,6.4vw,40px);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.pb-tile .num i{font-style:normal;color:var(--pb-acc)}
+.pb-tile .num small{font-size:.5em;font-weight:900;letter-spacing:0}
+.pb-tile .cap{font-size:12px;color:var(--pb-sub);line-height:1.5}
+.pb-btn{display:inline-flex;align-items:center;justify-content:center;background:var(--pb-ink);color:#fff;font-family:var(--gothic);font-weight:700;font-size:16px;letter-spacing:.06em;padding:15px 26px;text-decoration:none;border-radius:3px;width:fit-content;max-width:100%;transition:opacity .15s}
+.pb-btn:hover{opacity:.86}
+.pb-sec{padding-block:38px;border-top:1px solid var(--pb-rule);display:grid;gap:18px}
+.pb-sec h2{font-family:var(--mincho-b);font-size:clamp(22px,4.8vw,28px);font-weight:700;line-height:1.45}
+.pb-sec .eyebrow{font-size:11px;letter-spacing:.2em;font-weight:700;color:var(--pb-acc)}
+.pb-body{display:grid;gap:14px;max-width:36em;font-size:15.5px;line-height:1.9}
+.pb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.pb-card{background:var(--pb-panel);padding:16px;border-radius:3px;display:grid;gap:8px;align-content:start}
+.pb-card h3{font-family:var(--mincho-b);font-size:17px;font-weight:700}
+.pb-card p{font-size:13.5px;line-height:1.75;color:var(--pb-ink)}
+.pb-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.pb-fig{border-top:2px solid var(--pb-ink);padding-top:12px;display:grid;gap:6px}
+.pb-fig .num{font-family:var(--mincho-b);font-weight:900;font-size:clamp(28px,7vw,40px);line-height:1.1;font-variant-numeric:tabular-nums}
+.pb-fig .cap{font-size:13px;color:var(--pb-sub);line-height:1.6}
+.pb-table{width:100%;border-collapse:collapse;font-size:15px}
+.pb-table th{text-align:left;width:6.5em;color:var(--pb-sub);font-weight:500;padding:11px 0;border-bottom:1px solid var(--pb-rule);vertical-align:top}
+.pb-table td{padding:11px 0;border-bottom:1px solid var(--pb-rule);line-height:1.7}
+.pb-table tr:first-child th,.pb-table tr:first-child td{border-top:2px solid var(--pb-ink)}
+.pb-media{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:560px){.pb-media{grid-template-columns:1fr 200px;align-items:start}}
+.pb-media .ph{aspect-ratio:4/3;width:min(100%,220px)}
+.pb-cta{display:grid;gap:16px;justify-items:start}
+.pb-foot{padding-block:36px 64px;border-top:2px solid var(--pb-ink);font-size:13px;color:var(--pb-sub);display:grid;gap:22px}
+.pb-foot h3{font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--pb-ink)}
+.pb-foot .block{display:grid;gap:8px}
+
+/* ===== 案C 手紙 ===== */
+.pc{background:var(--pc-bg);color:var(--pc-ink);font-family:var(--hand)}
+.pc-hero{padding-block:40px 28px;display:grid;grid-template-columns:1fr;gap:20px}
+@media (min-width:560px){.pc-hero{grid-template-columns:1fr 150px;align-items:end}}
+.pc-eyebrow{font-family:var(--gothic);font-size:12px;letter-spacing:.18em;font-weight:700;color:var(--pc-sub)}
+.pc-hero h1{font-family:var(--hand);font-weight:600;font-size:clamp(30px,7.6vw,46px);line-height:1.35;margin-top:10px}
+.pc-hero .sub{font-size:19px;line-height:1.7;margin-top:8px}
+.pc-hero .ph{aspect-ratio:4/5;width:min(100%,140px)}
+.pc-letter{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 33px,var(--pc-line) 33px,var(--pc-line) 34px);background-origin:content-box;background-clip:content-box;padding-block:34px 0;display:grid;gap:34px;max-width:36em}
+.pc-letter p{font-size:17px;line-height:34px;letter-spacing:.01em}
+.pc-sign{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding-block:20px 8px;font-size:22px;font-weight:600}
+.pc-sign .seal{border-color:var(--pc-red);color:var(--pc-red);box-shadow:inset 0 0 0 1px rgba(169,53,42,.35);width:54px;height:54px;font-size:18px;transform:rotate(-6deg);font-family:var(--mincho-a)}
+.pc-box{background:var(--pc-panel);padding:20px 22px;border-radius:4px;display:grid;gap:10px;font-size:16px;line-height:1.9}
+.pc-box .who{font-family:var(--gothic);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--pc-sub)}
+.pc-sec{padding-block:36px;border-top:1px solid var(--pc-line);display:grid;gap:18px}
+.pc-sec h2{font-family:var(--hand);font-size:clamp(22px,5vw,28px);font-weight:600;line-height:1.5}
+.pc-terms{display:grid;gap:10px;font-size:16px}
+.pc-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;line-height:1.8}
+.pc-terms b{font-weight:600;color:var(--pc-sub)}
+.pc-btn{display:inline-flex;align-items:center;justify-content:center;background:var(--pc-ink);color:var(--pc-bg);font-family:var(--gothic);font-weight:700;font-size:16px;letter-spacing:.08em;padding:15px 28px;text-decoration:none;border-radius:999px;width:fit-content;max-width:100%;transition:background .15s}
+.pc-btn:hover{background:var(--pc-red)}
+.pc-cta{display:grid;gap:16px;justify-items:start}
+.pc-foot{padding-block:36px 64px;border-top:1px solid var(--pc-line);font-family:var(--gothic);font-size:13px;color:var(--pc-sub);display:grid;gap:22px}
+.pc-foot h3{font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--pc-ink)}
+.pc-foot .block{display:grid;gap:8px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bar" role="region" aria-label="叩き台の切り替え">
+  <span class="bar__label">叩き台 v0.4</span>
+  <span class="bar__btns">
+    <button type="button" data-pat="a" aria-pressed="true">案A 漢</button>
+    <button type="button" data-pat="b" aria-pressed="false">案B 実績</button>
+    <button type="button" data-pat="c" aria-pressed="false">案C 手紙</button>
+  </span>
+  <span class="bar__note">写真・決済リンクは仮。「要確認」はTEDx講演の文字起こしとサイトから起こした内容で、黒川さんの確認待ち。</span>
+</div>
+
+<!-- ============ 案A 漢 ============ -->
+<main id="pattern-a" class="pa">
+  <div class="wrap">
+    <section class="pa-hero">
+      <div class="pa-yoko">
+        <div class="pa-yoko__top">
+          <p class="pa-eyebrow">サポーター募集</p>
+          <p class="pa-tatesub">良心塾 塾長・黒川洋司を、<br>仲間として支える</p>
+        </div>
+        <div class="pa-yoko__bottom">
+          <p class="pa-price">一口 一万円／月</p>
+          <p class="pa-lede">背中を預けられる仲間を、募る。</p>
+          <a class="pa-btn" href="#sasaeru-a" data-kuchi="1">毎月1万円で支える</a>
+          <p class="pa-small">押すと決済ページが開く。氏名・メール・カードを入れて完了。毎月自動、いつでも止められる。見返りは、ない。</p>
+          <div class="seal" aria-hidden="true">黒川</div>
+        </div>
+      </div>
+      <h1 class="pa-title" aria-label="漢・黒川"><span aria-hidden="true">漢</span><span class="dot" aria-hidden="true">・</span><span aria-hidden="true">黒</span><span aria-hidden="true">川</span></h1>
+    </section>
+
+    <section class="pa-sec">
+      <h2>本人の言葉 <span class="tag">要確認</span></h2>
+      <p class="pa-quote">「残りの人生は、おかんに恥ずかしくない生き方をしよう。そう決めた時から、見える世界が変わった。」</p>
+      <p class="pa-quote">「更生なんかするわけない、という意見もよく分かる。でも、僕らの周りにいるから、取り返しのつかない事件にはならない。彼らがちゃんと社会で生きていけるようになれば、被害者は間違いなく減る。」</p>
+      <p class="pa-quote">「寄り添うのは本当に大変で、理不尽な目にも遭う。でも、それを一人一人、誰かがやっていかないと。」</p>
+      <p class="pa-quote">「皆さんも、ぜひ仲間になってほしい。」</p>
+      <p class="note">TEDxAwaji（2021年）と関西テレビ「報道ランナー」（2022年）の発言から。自動文字起こしを読みやすく整えた文なので、正確な言い回しは黒川さんに確認します。</p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>黒川洋司とは</h2>
+      <div class="pa-bio">
+        <div class="pa-body">
+          <p>1971年、大阪生まれ。中学の頃から道を外れ、人生の半分を裏側で生きた。28歳で美容室を起こして成功したが、本人いわく「傲慢という名の病」にかかっていた。</p>
+          <p>35歳の冬、女手ひとつで育ててくれた母が脳梗塞で倒れ、意識が戻らないまま59歳で急死した。何ひとつ親孝行できなかった自分が情けなく、「残りの人生は、おかんに恥ずかしくない生き方をする」と決めた。靴を揃え、トイレを掃除し、本を読み、学び直すところから始めた。</p>
+          <p>2013年、日本財団「職親プロジェクト」の発足メンバーに。大阪・福島区の自分の美容室で、少年院や刑務所を出た若者を雇い始めた。2015年、良心塾をつくり、住む場所と仕事と学びを、自分の手で用意し続けてきた。</p>
+        </div>
+        <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+      </div>
+      <p class="note">経歴の細部はTEDx講演の文字起こしによる。<span class="tag">要確認</span></p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>やってきたこと</h2>
+      <dl class="pa-tl">
+        <dt>2013</dt><dd>日本財団「職親プロジェクト」発足メンバー。法務省との官民連携で、出所者に仕事を用意して再犯を防ぐ取り組み。</dd>
+        <dt>2015</dt><dd>大阪に更生支援施設「ヒューマンハーバー大阪」を設立し、教育部門として良心塾を開校。住居支援と、読み書き・計算からの基礎教育を先駆けて始める。</dd>
+        <dt>2017</dt><dd>株式会社良心塾に社名変更。</dd>
+        <dt>2021</dt><dd>再チャレンジ居酒屋「結笑和（ゆにわ）」開店。TEDxAwaji に登壇、「世界平和はお母さんの幸せから始まる」。</dd>
+        <dt>2025</dt><dd>一般社団法人りょうしん塾を設立。</dd>
+      </dl>
+      <h3>支援の中身</h3>
+      <dl class="pa-pillars">
+        <dt>住居</dt><dd>良心寮。帰る家のない若者が住み込み、共同生活で視野を広げる。</dd>
+        <dt>就労</dt><dd>再チャレンジ居酒屋「結笑和（ゆにわ）」。働きながら人と出会い、社会を学ぶ場。テレビ大阪が「おせっかい食堂」として取材。</dd>
+        <dt>教育</dt><dd>「心のスポンジづくりプログラム」。教育分野で特許を取得（特許第7181527号）。修了者の再犯率0%※。</dd>
+        <dt>子育て</dt><dd>シングルマザーや、頼れる家族のいない親を支え、虐待の連鎖を手前で止める。</dd>
+      </dl>
+      <p class="note">※ 良心塾公式サイトの記載による。年表の2017・2021はサイトの記述をNotebookLMで読み取ったもの。<span class="tag">要確認</span></p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>現場から <span class="tag">要確認</span></h2>
+      <div class="pa-body">
+        <p>良心塾に通った若者は、延べ40人（2021年時点）。美容室では少年院を出た子を14人雇い、5人が働き続け、2人が正社員になった（2022年時点）。数字にすれば小さい。だが、その一人ひとりに、黒川は寝食を共にして付き合ってきた。</p>
+        <p>18歳で少年院を出て美容室に入った少年は、嘘と失敗を繰り返した。黒川は寮で一緒に暮らし、叱り、待った。後輩が入ってきた時、彼は教える側に回り、初めて責任というものを覚えた。「心底、変わりたいと言う。その気持ちを恐れない。俺も最後まで付き合う。」</p>
+        <p>17歳の少女がいた。義父の暴力から逃げ、夜の街で使われ、少年院に入った。腕には自傷の痕が100本以上。少年院に講演に来た黒川に、彼女は助けを求めた。最初は反発ばかり。それでも「見返りを求めない大人」に初めて出会い、人を信じられるようになった。彼女はのちに黒川の養女になり、いまは2児の母として、居酒屋「結笑和」の女将を務め、2026年3月には株式会社良心塾の代表取締役に就いた。</p>
+        <p>「人は何度でも、人生をやり直せる」。塾長から教わった言葉だと、彼女は言う。</p>
+      </div>
+      <p class="note">テレビ大阪（2021・2022年）、関西テレビ「報道ランナー」（2022年）、TEDx講演、良心塾サイトの記述による。ご本人たちの掲載可否と表現は黒川さんに確認。</p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>これから <span class="tag">要確認</span></h2>
+      <div class="pa-body">
+        <p>出口（再犯防止）だけでは足りない。入口を変える。お母さんの支援、教育、食、農業。</p>
+        <p>助け合い、支え合い、学び合う「愛の循環村」を地域に広げる。まずは良心塾のある大阪・福島区の商店街から。淡路島には無農薬の「良心ファーム」を開いた。社会問題に無関心だった大人を、そこから巻き込む。</p>
+      </div>
+      <p class="note">2021年のTEDx講演で語られた構想。現在の計画は黒川さんに確認して差し替えます。</p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>いま、何が起きているか</h2>
+      <div class="pa-body">
+        <p>活動を続けるための資金が、尽きかけている。</p>
+        <p>集まった支援は、一般社団法人りょうしん塾が受け取り、黒川塾長が現場で動き続けるための活動費に使う。</p>
+      </div>
+      <p class="note">内訳は黒川さんと決めて記載します。<span class="tag">仮</span></p>
+    </section>
+
+    <section class="pa-sec">
+      <h2>サポーターの形</h2>
+      <ul class="pa-terms">
+        <li><b>金額</b><span>一口 一万円／月（複数口も可）</span></li>
+        <li><b>支払い</b><span>クレジットカードで毎月自動決済</span></li>
+        <li><b>期間</b><span>定めなし。いつでも止められる</span></li>
+        <li><b>見返り</b><span>なし。希望する人だけ、サポーター名簿に名前を載せる</span></li>
+        <li><b>受け皿</b><span>一般社団法人りょうしん塾</span></li>
+      </ul>
+    </section>
+
+    <section class="pa-sec" id="sasaeru-a">
+      <h2>背中を預ける</h2>
+      <div class="pa-cta">
+        <p class="pa-lede">黒川の活動に共感するなら、共に背負ってほしい。</p>
+        <a class="pa-btn" href="#sasaeru-a" data-kuchi="1">一口 月1万円で支える</a>
+        <p class="pa-small">押すと決済ページ（Square）が開く。氏名・メール・カードを入れて完了。毎月自動で、いつでも止められる。複数口も可（申込後に口数をお知らせください）。カード以外をご希望の方は、良心塾（06-6449-2227）まで。</p>
+        <p class="note link-pending">決済リンクは仮置き。後日、Squareのリンクに差し替えます。<span class="tag">仮</span></p>
+      </div>
+    </section>
+
+    <footer class="pa-foot">
+      <div class="block">
+        <h3>運営</h3>
+        <div class="contact">
+          <span>一般社団法人りょうしん塾（2025年設立）　理事・塾長 黒川洋司</span>
+          <span>〒553-0006 大阪市福島区吉野2丁目11-21</span>
+          <span>TEL <span class="num">06-6449-2227</span>（平日 9:00〜17:00）</span>
+        </div>
+      </div>
+      <div class="block">
+        <h3>黒川洋司を知る</h3>
+        <ul class="links">
+          <li><a href="https://m.youtube.com/watch?v=UBOvBAClLI0" target="_blank" rel="noopener">TEDxAwaji「世界平和はお母さんの幸せから始まる」</a></li>
+          <li><a href="https://youtu.be/5wo2cXKSneU" target="_blank" rel="noopener">関西テレビ「報道ランナー」少年法改正から3カ月 罪を犯した少年たち（2022年）</a></li>
+          <li><a href="https://youtu.be/hgrJfcqkdWQ" target="_blank" rel="noopener">テレビ大阪　若者の自殺もなくしたい… 大阪下町の「おせっかい食堂」（2021年）</a></li>
+          <li><a href="https://youtu.be/qP3m_iQQ7XI" target="_blank" rel="noopener">テレビ大阪　やさしいニュース</a></li>
+          <li><a href="https://youtu.be/8kxYg9NyTc0" target="_blank" rel="noopener">テレビ大阪　社長は元暴走族。少年院を出た若者と歩む、更生の道。（2022年）</a></li>
+          <li><a href="https://ryoshinjuku.com" target="_blank" rel="noopener">良心塾 公式サイト</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<!-- ============ 案B 実績 ============ -->
+<main id="pattern-b" class="pb" hidden>
+  <div class="wrap">
+    <section class="pb-hero">
+      <p class="pb-eyebrow">良心塾 塾長・黒川洋司｜月額サポーター募集</p>
+      <h1>13年、<br>現場を離れなかった。</h1>
+      <p class="pb-lede">少年院や刑務所を出た若者に、住む場所と仕事と学びを。2013年から更生支援の現場に立ち続ける黒川洋司の活動を、月額1万円で支えるサポーターを募集します。</p>
+      <div class="pb-tiles">
+        <div class="pb-tile"><span class="num">2013</span><span class="cap">職親プロジェクト<br>発足メンバー</span></div>
+        <div class="pb-tile"><span class="num">2015</span><span class="cap">良心塾を開校<br>（大阪）</span></div>
+        <div class="pb-tile"><span class="num"><small>延べ</small>40<small>人</small></span><span class="cap">良心塾に通った若者<br>（2021年時点）</span></div>
+        <div class="pb-tile"><span class="num"><i>0</i>%</span><span class="cap">教育プログラム<br>修了者の再犯率※</span></div>
+      </div>
+      <a class="pb-btn" href="#sasaeru-b" data-kuchi="1">サポーターになる（月額1万円）</a>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">人物</p>
+      <h2>何をしてきた人か</h2>
+      <div class="pb-media">
+        <div class="pb-body">
+          <p>黒川洋司（1971年、大阪生まれ）は、少年期からの非行歴を持ち、28歳で美容室を起業して成功したのち、35歳のときの母の急死を機に生き方を変えた人物です。2013年、お好み焼き「千房」の中井会長の呼びかけで始まった日本財団「職親プロジェクト」（法務省との官民連携）に発足メンバーとして参加し、大阪・福島区の自身の美容室で少年院出院者・刑務所出所者の雇用を始めました。</p>
+          <p>2015年、大阪に更生支援施設ヒューマンハーバー大阪を設立し、教育部門として良心塾を開校。仕事を用意するだけでは更生は続かないと考え、住居支援と基礎教育を先駆けて始めました。2017年に株式会社良心塾へ社名変更。2021年に再チャレンジ居酒屋「結笑和（ゆにわ）」を開き、同年TEDxAwajiに登壇。2025年に一般社団法人りょうしん塾を設立し、現在は同法人の理事・塾長として活動しています。</p>
+        </div>
+        <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+      </div>
+      <p class="note">経歴の細部はTEDx講演の文字起こしと良心塾サイトの記述による。<span class="tag">要確認</span></p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">活動</p>
+      <h2>良心塾の4つの支援</h2>
+      <div class="pb-cards">
+        <div class="pb-card"><h3>住居支援</h3><p>良心寮。帰る家のない若者への住居提供と、緊急時の一時保護。</p></div>
+        <div class="pb-card"><h3>就労支援</h3><p>再チャレンジ居酒屋「結笑和（ゆにわ）」と生活応援フェア。接客・会話・数字感覚を実地で身につける。</p></div>
+        <div class="pb-card"><h3>教育支援</h3><p>「心のスポンジづくりプログラム」。教育分野で特許を取得（特許第7181527号）。修了者の再犯率0%※。</p></div>
+        <div class="pb-card"><h3>子育て支援</h3><p>シングルマザーや、頼れる家族のいない親への支援。虐待の連鎖を手前で止める。</p></div>
+      </div>
+      <p class="note">※ 良心塾公式サイトの記載による。</p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">根拠</p>
+      <h2>なぜ、一人の更生が社会の利益になるのか</h2>
+      <div class="pb-figs">
+        <div class="pb-fig"><span class="num">約400万円／年</span><span class="cap">受刑者1人あたりの刑務所収容コスト※</span></div>
+        <div class="pb-fig"><span class="num">約半数</span><span class="cap">犯罪者のうち、10年以内に再犯して刑務所に戻る割合※</span></div>
+      </div>
+      <div class="pb-body">
+        <p>更生した一人は、この社会コストを消し、働いて納税する側に回ります。黒川塾長自身の言葉では、「彼らが僕らの周りにいるから、取り返しのつかない事件にはならない。ちゃんと社会で生きていけるようになれば、被害者は間違いなく減る」（関西テレビ「報道ランナー」2022年）。良心塾の支援は、社会の損失を価値に変える取り組みです。</p>
+      </div>
+      <p class="note">※ 良心塾の公開資料（コングラント寄付ページ）の記載による。発言は自動文字起こしを整えた文。<span class="tag">要確認</span></p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">現状</p>
+      <h2>現状と、支援の使い道</h2>
+      <div class="pb-body">
+        <p>現在、黒川塾長の活動資金は底をつきかけています。本サポーター制度で集まった資金は、一般社団法人りょうしん塾が受け取り、黒川塾長が現場で動き続けるための活動費に充てます。</p>
+      </div>
+      <p class="note">内訳は黒川さんと決めて記載します。<span class="tag">仮</span></p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">事例</p>
+      <h2>現場の記録 <span class="tag">要確認</span></h2>
+      <div class="pb-body">
+        <p>良心塾に通った若者は延べ40人（2021年時点）。美容室では少年院出院者を14人雇用し、5人が働き続け、2人が正社員になっています（2022年時点）。</p>
+        <p>18歳で少年院を出て美容室に入った少年は、嘘と失敗を繰り返しました。黒川塾長は寮で寝食を共にして指導を続け、後輩が入ると彼は教える側に回り、責任感が芽生えました。</p>
+        <p>義父の暴力から逃れ、夜の街で利用されて少年院に入った17歳の少女は、少年院での黒川塾長の講演をきっかけに良心塾へ。反発を繰り返しながら「見返りを求めない大人」に出会い、人を信じられるようになりました。のちに黒川塾長の養女となり、現在は2児の母として居酒屋「結笑和」の女将を務め、2026年3月に株式会社良心塾の代表取締役に就任しています。</p>
+      </div>
+      <p class="note">テレビ大阪（2021・2022年）、関西テレビ「報道ランナー」（2022年）、TEDx講演、良心塾サイトの記述による。ご本人たちの掲載可否と表現は黒川さんに確認。</p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">展望</p>
+      <h2>これからやろうとしていること <span class="tag">要確認</span></h2>
+      <div class="pb-body">
+        <p>再犯防止という「出口」の支援に加え、お母さんの支援・教育・食・農業という「入口」の支援へ。助け合い、支え合い、学び合う「愛の循環村」を地域に広げる構想で、まずは良心塾のある大阪・福島区の商店街から始め、淡路島には無農薬農園「良心ファーム」を開いています。</p>
+      </div>
+      <p class="note">2021年のTEDx講演で語られた構想。現在の計画は黒川さんに確認して差し替えます。</p>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">条件</p>
+      <h2>サポーターの条件</h2>
+      <table class="pb-table">
+        <tr><th>金額</th><td>一口 1万円／月（複数口可）</td></tr>
+        <tr><th>支払い</th><td>クレジットカード（毎月自動決済）</td></tr>
+        <tr><th>期間</th><td>定めなし。いつでも停止できます</td></tr>
+        <tr><th>特典</th><td>なし。希望者はサポーター名簿にお名前を掲載</td></tr>
+        <tr><th>受け皿</th><td>一般社団法人りょうしん塾（2025年設立・大阪市福島区）</td></tr>
+        <tr><th>使途</th><td>黒川塾長の活動費</td></tr>
+      </table>
+    </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">メディア</p>
+      <h2>取材・登壇</h2>
+      <ul class="links">
+        <li><a href="https://m.youtube.com/watch?v=UBOvBAClLI0" target="_blank" rel="noopener">TEDxAwaji「世界平和はお母さんの幸せから始まる」</a></li>
+        <li><a href="https://youtu.be/5wo2cXKSneU" target="_blank" rel="noopener">関西テレビ「報道ランナー」少年法改正から3カ月 罪を犯した少年たち（2022年）</a></li>
+        <li><a href="https://youtu.be/hgrJfcqkdWQ" target="_blank" rel="noopener">テレビ大阪　若者の自殺もなくしたい… 大阪下町の「おせっかい食堂」（2021年）</a></li>
+        <li><a href="https://youtu.be/qP3m_iQQ7XI" target="_blank" rel="noopener">テレビ大阪　やさしいニュース</a></li>
+        <li><a href="https://youtu.be/8kxYg9NyTc0" target="_blank" rel="noopener">テレビ大阪　社長は元暴走族。少年院を出た若者と歩む、更生の道。（2022年）</a></li>
+        <li><a href="https://ryoshinjuku.com" target="_blank" rel="noopener">良心塾 公式サイト</a></li>
+      </ul>
+    </section>
+
+    <section class="pb-sec" id="sasaeru-b">
+      <p class="eyebrow">申し込み</p>
+      <h2>サポーターになる</h2>
+      <div class="pb-cta">
+        <div class="pb-body"><p>黒川塾長の活動に共感いただける方は、サポーターとして活動を支えてください。ボタンを押すと決済ページ（Square）が開きます。氏名・メールアドレス・カード情報を入力して完了。毎月自動決済で、いつでも停止できます。</p></div>
+        <a class="pb-btn" href="#sasaeru-b" data-kuchi="1">サポーターになる（一口 月額1万円）</a>
+        <div class="pb-body"><p>複数口も可能です（申込後に口数をお知らせください）。カード以外をご希望の方は、良心塾（06-6449-2227）までご連絡ください。</p></div>
+        <p class="note link-pending">決済リンクは仮置き。後日、Squareのリンクに差し替えます。<span class="tag">仮</span></p>
+      </div>
+    </section>
+
+    <footer class="pb-foot">
+      <div class="block">
+        <h3>運営</h3>
+        <div class="contact">
+          <span>一般社団法人りょうしん塾（2025年設立）　理事・塾長 黒川洋司</span>
+          <span>〒553-0006 大阪市福島区吉野2丁目11-21</span>
+          <span>TEL <span class="num">06-6449-2227</span>（平日 9:00〜17:00）</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<!-- ============ 案C 手紙 ============ -->
+<main id="pattern-c" class="pc" hidden>
+  <div class="wrap">
+    <section class="pc-hero">
+      <div>
+        <p class="pc-eyebrow">良心塾 塾長・黒川洋司より</p>
+        <h1>仲間の皆さんへ</h1>
+        <p class="sub">頼みがあります。</p>
+      </div>
+      <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+    </section>
+
+    <section class="pc-letter">
+      <p>正直に言います。この活動を続けるためのお金が、尽きかけています。</p>
+      <p>私は少年の頃から道を外れ、人生の半分を裏側で生きてきました。それを変えたのは、女手ひとつで育ててくれた母の急死です。35歳の冬、母は脳梗塞で倒れ、意識が戻らないまま59歳で逝きました。何ひとつ親孝行できなかった自分が情けなくて、「残りの人生は、おかんに恥ずかしくない生き方をしよう」と決めたら、見える世界が変わりました。</p>
+      <p>2013年、職親プロジェクトの発足メンバーとして若者の更生支援を始め、2015年には大阪に良心塾をつくりました。少年院や刑務所を出た若者に、住む場所と、仕事と、学び直す場を、自分の手で用意する。それを今日まで続けてきました。</p>
+      <p>良心塾に来る子は、全員が虐待を経験しています。親に守られなかった分を、血のつながらない家族である私たち仲間が、みんなで支える。それしかないと思っています。美容室では少年院を出た子を14人雇い、嘘も裏切りも何度も経験しました。それでも、17歳で来た、腕が自傷の痕だらけだった少女は、いま2児の母になり、「結笑和」の女将として店に立っています。人は何度でもやり直せる。私はそれを見てきました。</p>
+      <p>「更生なんかするわけない」と言われることもあります。その気持ちもよく分かります。でも、彼らが私たちの周りにいる限り、取り返しのつかない事件にはなりません。彼らが社会でちゃんと生きていけるようになれば、被害者は間違いなく減ります。</p>
+      <p>だから仲間の皆さんに頼みます。月に一万円、私の活動を支えてもらえませんか。見返りは用意できません。いただいたものは、私が現場で動き続けるための活動費に使います。</p>
+      <p>再犯を防ぐ「出口」の支援だけでなく、お母さんと子どもを守る「入口」の支援を、この街から広げたい。「世界平和は、お母さんの幸せから始まる」。この言葉を、口だけで終わらせたくないのです。</p>
+    </section>
+    <div class="pc-sign"><span>黒川洋司</span><div class="seal" aria-hidden="true">黒川</div></div>
+    <p class="note">TEDx講演（2021年）とサイトの記述から起こした下書き。黒川さん本人の言葉で書き直す前提。<span class="tag">要確認</span></p>
+
+    <section class="pc-sec">
+      <div class="pc-box">
+        <p class="who">呼びかけ人より</p>
+        <p>黒川さんの活動に共感していただける方は、ぜひ黒川さんの活動をサポートしてください。</p>
+        <p class="who">呼びかけ人（氏名：仮）</p>
+      </div>
+    </section>
+
+    <section class="pc-sec">
+      <h2>サポーターの形</h2>
+      <ul class="pc-terms">
+        <li><b>金額</b><span>一口 一万円／月（複数口も可）</span></li>
+        <li><b>支払い</b><span>クレジットカードで毎月自動決済</span></li>
+        <li><b>期間</b><span>定めなし。いつでも止められます</span></li>
+        <li><b>見返り</b><span>なし。希望する人だけ、サポーター名簿にお名前を載せます</span></li>
+        <li><b>受け皿</b><span>一般社団法人りょうしん塾</span></li>
+      </ul>
+    </section>
+
+    <section class="pc-sec" id="sasaeru-c">
+      <h2>月に一万円で、支える</h2>
+      <div class="pc-cta">
+        <a class="pc-btn" href="#sasaeru-c" data-kuchi="1">一口 月1万円で支える</a>
+        <p style="font-size:15px;line-height:1.8;max-width:36em">押すと決済ページ（Square）が開きます。お名前・メール・カードを入れれば完了。毎月自動で、いつでも止められます。複数口も可（申込後に口数をお知らせください）。カード以外をご希望の方は、良心塾（06-6449-2227）まで。</p>
+        <p class="note link-pending">決済リンクは仮置き。後日、Squareのリンクに差し替えます。<span class="tag">仮</span></p>
+      </div>
+    </section>
+
+    <footer class="pc-foot">
+      <div class="block">
+        <h3>運営</h3>
+        <div class="contact">
+          <span>一般社団法人りょうしん塾（2025年設立）　理事・塾長 黒川洋司</span>
+          <span>〒553-0006 大阪市福島区吉野2丁目11-21</span>
+          <span>TEL <span class="num">06-6449-2227</span>（平日 9:00〜17:00）</span>
+        </div>
+      </div>
+      <div class="block">
+        <h3>黒川洋司を知る</h3>
+        <ul class="links">
+          <li><a href="https://m.youtube.com/watch?v=UBOvBAClLI0" target="_blank" rel="noopener">TEDxAwaji「世界平和はお母さんの幸せから始まる」</a></li>
+          <li><a href="https://youtu.be/5wo2cXKSneU" target="_blank" rel="noopener">関西テレビ「報道ランナー」少年法改正から3カ月 罪を犯した少年たち（2022年）</a></li>
+          <li><a href="https://youtu.be/hgrJfcqkdWQ" target="_blank" rel="noopener">テレビ大阪　若者の自殺もなくしたい… 大阪下町の「おせっかい食堂」（2021年）</a></li>
+          <li><a href="https://youtu.be/qP3m_iQQ7XI" target="_blank" rel="noopener">テレビ大阪　やさしいニュース</a></li>
+          <li><a href="https://youtu.be/8kxYg9NyTc0" target="_blank" rel="noopener">テレビ大阪　社長は元暴走族。少年院を出た若者と歩む、更生の道。（2022年）</a></li>
+          <li><a href="https://ryoshinjuku.com" target="_blank" rel="noopener">良心塾 公式サイト</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<script>
+(function(){
+  /* ===== 決済リンク（Squareサブスクリプションの「お会計リンク」・一口 月1万円）=====
+     URLをここに貼るだけで、全ページの申し込みボタンが直接つながる。空のうちは仮置き。 */
+  var LINK="";
+  var ks=document.querySelectorAll('[data-kuchi]');
+  for(var j=0;j<ks.length;j++){
+    if(LINK){ks[j].href=LINK;ks[j].target='_blank';ks[j].rel='noopener';}
+  }
+  if(LINK){var pend=document.querySelectorAll('.link-pending');for(var q=0;q<pend.length;q++){pend[q].hidden=true;}}
+
+  var pats={a:'pattern-a',b:'pattern-b',c:'pattern-c'};
+  function show(k){
+    Object.keys(pats).forEach(function(p){
+      var el=document.getElementById(pats[p]); if(el){el.hidden=(p!==k);}
+      var b=document.querySelector('.bar button[data-pat="'+p+'"]'); if(b){b.setAttribute('aria-pressed',p===k?'true':'false');}
+    });
+    document.body.setAttribute('data-pattern',k);
+    try{localStorage.setItem('kurokawa-draft-pattern',k);}catch(e){}
+  }
+  var btns=document.querySelectorAll('.bar button[data-pat]');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click',function(ev){
+      var k=ev.currentTarget.getAttribute('data-pat');
+      show(k);
+      try{history.replaceState(null,'','#'+k);}catch(e){}
+      window.scrollTo(0,0);
+    });
+  }
+  var h=(location.hash||'').replace('#','');
+  var init=pats[h]?h:null;
+  if(!init){try{var s=localStorage.getItem('kurokawa-draft-pattern');if(pats[s]){init=s;}}catch(e){}}
+  show(init||'a');
+})();
+</script>
+</body>
+</html>
