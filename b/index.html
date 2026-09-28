@@ -86,6 +86,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa-pillars{display:grid;grid-template-columns:5.2em 1fr;gap:10px 14px}
 .pa-pillars dt{font-family:var(--mincho-a);font-weight:800;font-size:17px;line-height:1.8}
 .pa-pillars dd{line-height:1.8}
+.pa-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em}
+.pa-jukka li{counter-increment:j;display:grid;grid-template-columns:2.2em 1fr;gap:8px;font-family:var(--mincho-a);font-weight:600;font-size:16px;line-height:1.8}
+.pa-jukka li::before{content:counter(j,cjk-ideographic) "、";color:var(--pa-red);font-weight:800;text-align:right}
 .pa-terms{display:grid;gap:0}
 .pa-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;padding-block:11px;border-bottom:1px solid var(--pa-rule)}
 .pa-terms li:first-child{border-top:1px solid var(--pa-rule)}
@@ -124,6 +127,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pb-fig{border-top:2px solid var(--pb-ink);padding-top:12px;display:grid;gap:6px}
 .pb-fig .num{font-family:var(--mincho-b);font-weight:900;font-size:clamp(28px,7vw,40px);line-height:1.1;font-variant-numeric:tabular-nums}
 .pb-fig .cap{font-size:13px;color:var(--pb-sub);line-height:1.6}
+.pb-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em;font-size:15.5px;line-height:1.8}
+.pb-jukka li{counter-increment:j;display:grid;grid-template-columns:1.8em 1fr;gap:8px}
+.pb-jukka li::before{content:counter(j) ".";color:var(--pb-acc);font-weight:700;font-variant-numeric:tabular-nums}
 .pb-table{width:100%;border-collapse:collapse;font-size:15px}
 .pb-table th{text-align:left;width:6.5em;color:var(--pb-sub);font-weight:500;padding:11px 0;border-bottom:1px solid var(--pb-rule);vertical-align:top}
 .pb-table td{padding:11px 0;border-bottom:1px solid var(--pb-rule);line-height:1.7}
@@ -169,7 +175,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 <main id="pattern-b" class="pb">
   <div class="wrap">
     <section class="pb-hero">
-      <p class="pb-eyebrow">良心塾 塾長・黒川洋司｜月額サポーター募集</p>
+      <p class="pb-eyebrow">生まれかわりびと・良心塾 塾長 黒川洋司｜月額サポーター募集</p>
       <h1>13年、<br>現場を離れなかった。</h1>
       <p class="pb-lede">少年院や刑務所を出た若者に、住む場所と仕事と学びを。2013年から更生支援の現場に立ち続ける黒川洋司の活動を、月額1万円で支えるサポーターを募集します。</p>
       <div class="pb-tiles">
@@ -239,8 +245,36 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <p class="eyebrow">展望</p>
       <h2>これからやろうとしていること</h2>
       <div class="pb-body">
-        <p>再犯防止という「出口」の支援に加え、お母さんの支援・教育・食・農業という「入口」の支援へ。助け合い、支え合い、学び合う「愛の循環村」を地域に広げる構想で、まずは良心塾のある大阪・福島区の商店街から始め、淡路島には無農薬農園「良心ファーム」を開いています。</p>
+        <p>ミッションは「負の連鎖を止め、愛の循環社会をつくる」。理念は「人を見捨てない。しかし、本人から人生の責任を奪わない」。支援の道筋を、守る → 向き合う → 学ぶ → 働く → 自立する → 誰かを支える、と定義し、そのための「生まれかわりの場所」を自分たちでつくります。</p>
       </div>
+      <div class="pb-cards">
+        <div class="pb-card"><h3>生まれかわり案内所</h3><p>人生の次の一歩を一緒に探す入口。必要に応じて専門機関と連携し、住まい・教育・仕事・人とのつながりを一緒に考える。</p></div>
+        <div class="pb-card"><h3>生まれかわり道場</h3><p>心のスポンジプログラムなどを通じ、物事の見方・人との関わり方・働く意味を学びなおす。</p></div>
+        <div class="pb-card"><h3>生まれかわりホーム</h3><p>安心して眠れる住まい。共同生活で生活習慣・責任・思いやりを学び、自立を目指す。</p></div>
+        <div class="pb-card"><h3>生まれかわりWORK</h3><p>働くことで自尊心と社会とのつながりを取り戻し、支援される側から社会に価値を返す側へ。</p></div>
+        <div class="pb-card"><h3>生まれかわりサロン</h3><p>心と身体を整える。「自分なんて」から「自分も大切な存在だ」へ。</p></div>
+        <div class="pb-card"><h3>生まれかわりファーム</h3><p>農業を通じた就労・教育・心身の回復・地域交流。人の再生を、地域と農業の再生につなげる。</p></div>
+      </div>
+      <div class="pb-body">
+        <p>これらを社会支援モデルとして体系化したものが「C型支援」。少年院で変わった若者を、社会に出た後も一人にしない。住まい × 再教育 × 就労 × 人とのつながりで、支援の空白を埋めます。企業・地域・教育者・農家・専門職・過去に支援された人までがつながる共同体を「チーム生まれかわる」と呼び、全国につくることを目指しています。</p>
+      </div>
+      </section>
+
+    <section class="pb-sec">
+      <p class="eyebrow">原則</p>
+      <h2>断固として譲れない十カ条</h2>
+      <ol class="pb-jukka">
+        <li>人を過去だけで判断しない。</li>
+        <li>人は何歳からでも生まれかわれると信じる。</li>
+        <li>背景は理解する。しかし、間違った行為まで正当化しない。</li>
+        <li>人を見捨てない。しかし、本人から人生の責任を奪わない。</li>
+        <li>依存させる支援ではなく、自立につながる支援をする。</li>
+        <li>制度からこぼれる人だからこそ、目を向ける。</li>
+        <li>支援される人を、やがて誰かを支える人財へ育てる。</li>
+        <li>現場を知らずに人を語らない。</li>
+        <li>ないことを言い訳にしない。必要なら自分たちでつくる。</li>
+        <li>良心に反することは、たとえ利益になってもやらない。</li>
+      </ol>
       </section>
 
     <section class="pb-sec">
@@ -272,7 +306,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <p class="eyebrow">申し込み</p>
       <h2>サポーターになる</h2>
       <div class="pb-cta">
-        <div class="pb-body"><p>黒川塾長の活動に共感いただける方は、サポーターとして活動を支えてください。ボタンを押すと良心塾オンラインの会員ページが開きます。「個人会員（月額11,000円）」を選び、メールアドレスとカード情報を登録して完了。毎月自動更新で、会員ページからいつでも解約できます。</p></div>
+        <div class="pb-body"><p>黒川塾長の活動に共感いただける方は、サポーターとして活動を支えてください。サポーターは「チーム生まれかわる」の一員です。ボタンを押すと良心塾オンラインの会員ページが開きます。「個人会員（月額11,000円）」を選び、メールアドレスとカード情報を登録して完了。毎月自動更新で、会員ページからいつでも解約できます。</p></div>
         <a class="pb-btn" href="https://www.ryoshinjuku.online/pricing-plans/payment" target="_blank" rel="noopener">サポーターになる（一口 月1万円・税込11,000円）</a>
         <div class="pb-body"><p>複数口も可能です（申込後に口数をお知らせください）。カード以外をご希望の方は、良心塾（06-6449-2227）までご連絡ください。</p></div>
         <div class="pb-body"><p>サポート、ありがとうございます。</p></div>

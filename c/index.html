@@ -86,6 +86,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa-pillars{display:grid;grid-template-columns:5.2em 1fr;gap:10px 14px}
 .pa-pillars dt{font-family:var(--mincho-a);font-weight:800;font-size:17px;line-height:1.8}
 .pa-pillars dd{line-height:1.8}
+.pa-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em}
+.pa-jukka li{counter-increment:j;display:grid;grid-template-columns:2.2em 1fr;gap:8px;font-family:var(--mincho-a);font-weight:600;font-size:16px;line-height:1.8}
+.pa-jukka li::before{content:counter(j,cjk-ideographic) "、";color:var(--pa-red);font-weight:800;text-align:right}
 .pa-terms{display:grid;gap:0}
 .pa-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;padding-block:11px;border-bottom:1px solid var(--pa-rule)}
 .pa-terms li:first-child{border-top:1px solid var(--pa-rule)}
@@ -124,6 +127,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pb-fig{border-top:2px solid var(--pb-ink);padding-top:12px;display:grid;gap:6px}
 .pb-fig .num{font-family:var(--mincho-b);font-weight:900;font-size:clamp(28px,7vw,40px);line-height:1.1;font-variant-numeric:tabular-nums}
 .pb-fig .cap{font-size:13px;color:var(--pb-sub);line-height:1.6}
+.pb-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em;font-size:15.5px;line-height:1.8}
+.pb-jukka li{counter-increment:j;display:grid;grid-template-columns:1.8em 1fr;gap:8px}
+.pb-jukka li::before{content:counter(j) ".";color:var(--pb-acc);font-weight:700;font-variant-numeric:tabular-nums}
 .pb-table{width:100%;border-collapse:collapse;font-size:15px}
 .pb-table th{text-align:left;width:6.5em;color:var(--pb-sub);font-weight:500;padding:11px 0;border-bottom:1px solid var(--pb-rule);vertical-align:top}
 .pb-table td{padding:11px 0;border-bottom:1px solid var(--pb-rule);line-height:1.7}
@@ -170,7 +176,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
   <div class="wrap">
     <section class="pc-hero">
       <div>
-        <p class="pc-eyebrow">良心塾 塾長・黒川洋司より</p>
+        <p class="pc-eyebrow">生まれかわりびと・良心塾 塾長 黒川洋司より</p>
         <h1>仲間の皆さんへ</h1>
         <p class="sub">頼みがあります。</p>
       </div>
@@ -183,7 +189,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <p>良心塾に来る子は、全員が虐待を経験しています。親に守られなかった分を、血のつながらない家族である私たち仲間が、みんなで支える。それしかないと思っています。美容室では少年院を出た子を14人雇い、嘘も裏切りも何度も経験しました。それでも、17歳で来た、腕が自傷の痕だらけだった少女は、いま2児の母になり、「結笑和」の女将として店に立っています。人は何度でもやり直せる。私はそれを見てきました。</p>
       <p>「更生なんかするわけない」と言われることもあります。その気持ちもよく分かります。でも、彼らが私たちの周りにいる限り、取り返しのつかない事件にはなりません。彼らが社会でちゃんと生きていけるようになれば、被害者は間違いなく減ります。</p>
       <p>だから仲間の皆さんに頼みます。月に一万円、私の活動を支えてもらえませんか。いただいたものは、私が現場で動き続けるための活動費に使います。</p>
-      <p>再犯を防ぐ「出口」の支援だけでなく、お母さんと子どもを守る「入口」の支援を、この街から広げたい。「世界平和は、お母さんの幸せから始まる」。この言葉を、口だけで終わらせたくないのです。</p>
+      <p>過去は消せません。でも、これからの生き方は変えられる。人は何歳からでも生まれかわれると、私は信じています。死んでから、生まれかわるんじゃない。生きている間に、生まれかわる。そのための住まいを、学びなおす場所を、働く場所を、なければ自分たちでつくる。</p>
+      <p>支えられた人が立ち上がり、やがて誰かを支える人になる。負の連鎖を止め、愛の循環社会をつくる。その未来を一緒につくる仲間を、私は「チーム生まれかわる」と呼んでいます。</p>
     </section>
     <div class="pc-sign"><span>黒川洋司</span><div class="seal" aria-hidden="true">黒川</div></div>
     <section class="pc-sec">

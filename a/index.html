@@ -86,6 +86,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa-pillars{display:grid;grid-template-columns:5.2em 1fr;gap:10px 14px}
 .pa-pillars dt{font-family:var(--mincho-a);font-weight:800;font-size:17px;line-height:1.8}
 .pa-pillars dd{line-height:1.8}
+.pa-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em}
+.pa-jukka li{counter-increment:j;display:grid;grid-template-columns:2.2em 1fr;gap:8px;font-family:var(--mincho-a);font-weight:600;font-size:16px;line-height:1.8}
+.pa-jukka li::before{content:counter(j,cjk-ideographic) "、";color:var(--pa-red);font-weight:800;text-align:right}
 .pa-terms{display:grid;gap:0}
 .pa-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;padding-block:11px;border-bottom:1px solid var(--pa-rule)}
 .pa-terms li:first-child{border-top:1px solid var(--pa-rule)}
@@ -124,6 +127,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pb-fig{border-top:2px solid var(--pb-ink);padding-top:12px;display:grid;gap:6px}
 .pb-fig .num{font-family:var(--mincho-b);font-weight:900;font-size:clamp(28px,7vw,40px);line-height:1.1;font-variant-numeric:tabular-nums}
 .pb-fig .cap{font-size:13px;color:var(--pb-sub);line-height:1.6}
+.pb-jukka{counter-reset:j;display:grid;gap:8px;max-width:36em;font-size:15.5px;line-height:1.8}
+.pb-jukka li{counter-increment:j;display:grid;grid-template-columns:1.8em 1fr;gap:8px}
+.pb-jukka li::before{content:counter(j) ".";color:var(--pb-acc);font-weight:700;font-variant-numeric:tabular-nums}
 .pb-table{width:100%;border-collapse:collapse;font-size:15px}
 .pb-table th{text-align:left;width:6.5em;color:var(--pb-sub);font-weight:500;padding:11px 0;border-bottom:1px solid var(--pb-rule);vertical-align:top}
 .pb-table td{padding:11px 0;border-bottom:1px solid var(--pb-rule);line-height:1.7}
@@ -172,7 +178,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <div class="pa-yoko">
         <div class="pa-yoko__top">
           <p class="pa-eyebrow">サポーター募集</p>
-          <p class="pa-tatesub">良心塾 塾長・黒川洋司を、<br>仲間として支える</p>
+          <p class="pa-tatesub">生まれかわりびと・良心塾 塾長<br>黒川洋司（ようじ）を、仲間として支える</p>
         </div>
         <div class="pa-yoko__bottom">
           <p class="pa-price">一口 一万円／月<br><small style="font-size:.5em;font-weight:600;letter-spacing:.02em">（税込 11,000円）</small></p>
@@ -187,10 +193,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 
     <section class="pa-sec">
       <h2>本人の言葉</h2>
-      <p class="pa-quote">「残りの人生は、おかんに恥ずかしくない生き方をしよう。そう決めた時から、見える世界が変わった。」</p>
+      <p class="pa-quote">「死んでから、生まれかわるんじゃない。生きている間に、生まれかわる。」</p>
+      <p class="pa-quote">「人を見捨てない。しかし、本人から人生の責任を奪わない。」</p>
+      <p class="pa-quote">「良心は、嘘をつけない。良心は、忘れない。良心に、時効はない。」</p>
       <p class="pa-quote">「更生なんかするわけない、という意見もよく分かる。でも、僕らの周りにいるから、取り返しのつかない事件にはならない。彼らがちゃんと社会で生きていけるようになれば、被害者は間違いなく減る。」</p>
-      <p class="pa-quote">「寄り添うのは本当に大変で、理不尽な目にも遭う。でも、それを一人一人、誰かがやっていかないと。」</p>
-      <p class="pa-quote">「皆さんも、ぜひ仲間になってほしい。」</p>
+      <p class="pa-quote">「残りの人生は、おかんに恥ずかしくない生き方をしよう。そう決めた時から、見える世界が変わった。」</p>
       </section>
 
     <section class="pa-sec">
@@ -236,9 +243,38 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
     <section class="pa-sec">
       <h2>これから</h2>
       <div class="pa-body">
-        <p>出口（再犯防止）だけでは足りない。入口を変える。お母さんの支援、教育、食、農業。</p>
-        <p>助け合い、支え合い、学び合う「愛の循環村」を地域に広げる。まずは良心塾のある大阪・福島区の商店街から。淡路島には無農薬の「良心ファーム」を開いた。社会問題に無関心だった大人を、そこから巻き込む。</p>
+        <p>負の連鎖を止め、愛の循環社会をつくる。</p>
+        <p>過去は消せない。だが、これからの生き方は変えられる。人は何歳からでも生まれかわれる。黒川はそう信じて、生まれかわるための場所を、自分たちの手でつくる。</p>
       </div>
+      <dl class="pa-pillars">
+        <dt>案内所</dt><dd>「変わりたい。でも、どうすればいいか分からない」人が、最初に扉を叩く入口。</dd>
+        <dt>道場</dt><dd>心のスポンジプログラムで、人生そのものを学びなおす。</dd>
+        <dt>ホーム</dt><dd>安心して眠れる住まいから、生活と責任を立て直す。</dd>
+        <dt>WORK</dt><dd>働くことで自尊心を取り戻し、支えられる側から、社会に価値を返す側へ。</dd>
+        <dt>サロン</dt><dd>心と身体を整え、「自分なんて」から「自分も大切な存在だ」へ。</dd>
+        <dt>ファーム</dt><dd>土に触れ、命と向き合う。人と地域と農業を、いっしょに再生する。</dd>
+      </dl>
+      <div class="pa-body">
+        <p>少年院で変わった若者を、社会に出た後も一人にしない。住まい、再教育、就労、人とのつながりで、支援の空白を埋める。</p>
+        <p>守る → 向き合う → 学ぶ → 働く → 自立する → 誰かを支える。ここまでが、黒川の考える支援だ。昨日まで支えられていた人が、明日は誰かの希望になる。その仲間を、黒川は「チーム生まれかわる」と呼ぶ。</p>
+      </div>
+      </section>
+
+    <section class="pa-sec">
+      <h2>譲れない十カ条</h2>
+      <ol class="pa-jukka">
+        <li>人を過去だけで判断しない。</li>
+        <li>人は何歳からでも生まれかわれると信じる。</li>
+        <li>背景は理解する。しかし、間違った行為まで正当化しない。</li>
+        <li>人を見捨てない。しかし、本人から人生の責任を奪わない。</li>
+        <li>依存させる支援ではなく、自立につながる支援をする。</li>
+        <li>制度からこぼれる人だからこそ、目を向ける。</li>
+        <li>支援される人を、やがて誰かを支える人財へ育てる。</li>
+        <li>現場を知らずに人を語らない。</li>
+        <li>ないことを言い訳にしない。必要なら自分たちでつくる。</li>
+        <li>良心に反することは、たとえ利益になってもやらない。</li>
+      </ol>
+      <p class="pa-quote">美しいか、美しくないか。そこに愛はあるのか。良心に忠実か。</p>
       </section>
 
     <section class="pa-sec">
@@ -262,7 +298,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
     <section class="pa-sec" id="sasaeru-a">
       <h2>背中を預ける</h2>
       <div class="pa-cta">
-        <p class="pa-lede">黒川の活動に共感するなら、共に背負ってほしい。</p>
+        <p class="pa-lede">黒川の活動に共感するなら、共に背負ってほしい。<br>チーム生まれかわるの、一人として。</p>
         <a class="pa-btn" href="https://www.ryoshinjuku.online/pricing-plans/payment" target="_blank" rel="noopener">一口 月1万円で支える</a>
         <p class="pa-small">押すと良心塾オンラインの会員ページが開く。「個人会員（月額11,000円）」を選び、メールとカードを登録して完了。毎月自動更新で、会員ページからいつでも解約できる。複数口も可（申込後に口数をお知らせください）。カード以外をご希望の方は、良心塾（06-6449-2227）まで。</p>
         <p class="pa-lede">サポート、ありがとうございます。</p>
