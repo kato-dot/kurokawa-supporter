@@ -9,8 +9,10 @@
 <meta property="og:description" content="良心塾 塾長・黒川洋司から仲間への手紙。月に一万円、活動を支えてもらえませんか。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kato-dot.github.io/kurokawa-supporter/c/">
+<meta property="og:image" content="https://kato-dot.github.io/kurokawa-supporter/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="description" content="良心塾 塾長・黒川洋司から仲間への手紙。月に一万円、活動を支えてもらえませんか。">
-<style>.pa-bio,.pb-media,.pc-hero{grid-template-columns:1fr!important}.pc-hero{align-items:start}</style>
 <title>仲間の皆さんへ ― 黒川洋司</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@700;900&family=Klee+One:wght@400;600&display=swap">
 <style>
@@ -80,6 +82,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa-bio{display:grid;grid-template-columns:1fr;gap:20px}
 @media (min-width:560px){.pa-bio{grid-template-columns:1fr 168px;align-items:start}}
 .pa-bio .ph{aspect-ratio:4/5;width:min(100%,180px)}
+.pa-bio .photo{width:min(100%,180px);aspect-ratio:4/5;object-fit:cover;border-radius:2px;display:block;justify-self:start}
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 10px;margin:0}
+.strip figure{margin:0;display:grid;gap:5px}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;display:block}
+.strip figcaption{font-family:var(--gothic);font-size:12px;line-height:1.5;opacity:.75}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px;max-width:420px}
+.pair figure{margin:0;display:grid;gap:5px}
+.pair img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px;display:block}
+.pair figcaption{font-family:var(--gothic);font-size:12px;line-height:1.5;opacity:.75}
 .pa-tl{display:grid;grid-template-columns:4.6em 1fr;gap:10px 14px}
 .pa-tl dt{font-family:var(--mincho-a);font-weight:800;color:var(--pa-red);font-variant-numeric:tabular-nums;font-size:18px;line-height:1.7}
 .pa-tl dd{line-height:1.8}
@@ -137,6 +148,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pb-media{display:grid;grid-template-columns:1fr;gap:16px}
 @media (min-width:560px){.pb-media{grid-template-columns:1fr 200px;align-items:start}}
 .pb-media .ph{aspect-ratio:4/3;width:min(100%,220px)}
+.pb-media .photo{width:min(100%,200px);aspect-ratio:4/5;object-fit:cover;border-radius:3px;display:block;justify-self:start}
 .pb-cta{display:grid;gap:16px;justify-items:start}
 .pb-foot{padding-block:36px 64px;border-top:2px solid var(--pb-ink);font-size:13px;color:var(--pb-sub);display:grid;gap:22px}
 .pb-foot h3{font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--pb-ink)}
@@ -150,6 +162,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pc-hero h1{font-family:var(--hand);font-weight:600;font-size:clamp(30px,7.6vw,46px);line-height:1.35;margin-top:10px}
 .pc-hero .sub{font-size:19px;line-height:1.7;margin-top:8px}
 .pc-hero .ph{aspect-ratio:4/5;width:min(100%,140px)}
+.pc-hero .photo{width:min(100%,150px);aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block}
+.pc-photo{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;max-width:36em}
+.pc-photo img{width:120px;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block}
+.pc-photo figcaption{font-size:15px;line-height:1.7}
+.pc-wide{margin:0;display:grid;gap:6px;max-width:36em}
+.pc-wide img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.pc-wide figcaption{font-family:var(--gothic);font-size:12px;opacity:.75}
 .pc-letter{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 33px,var(--pc-line) 33px,var(--pc-line) 34px);background-origin:content-box;background-clip:content-box;padding-block:34px 0;display:grid;gap:34px;max-width:36em}
 .pc-letter p{font-size:17px;line-height:34px;letter-spacing:.01em}
 .pc-sign{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding-block:20px 8px;font-size:22px;font-weight:600}
@@ -157,6 +176,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pc-box{background:var(--pc-panel);padding:20px 22px;border-radius:4px;display:grid;gap:10px;font-size:16px;line-height:1.9}
 .pc-box .who{font-family:var(--gothic);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--pc-sub)}
 .pc-sec{padding-block:36px;border-top:1px solid var(--pc-line);display:grid;gap:18px}
+.pc-letter+.pc-photo{margin-top:28px}
 .pc-sec h2{font-family:var(--hand);font-size:clamp(22px,5vw,28px);font-weight:600;line-height:1.5}
 .pc-terms{display:grid;gap:10px;font-size:16px}
 .pc-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;line-height:1.8}
@@ -180,7 +200,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <h1>仲間の皆さんへ</h1>
         <p class="sub">頼みがあります。</p>
       </div>
-      </section>
+      <img class="photo" src="../img/portrait.jpg" alt="黒川洋司">
+    </section>
 
     <section class="pc-letter">
       <p>正直に言います。この活動を続けるためのお金が、尽きかけています。</p>
@@ -192,6 +213,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <p>過去は消せません。でも、これからの生き方は変えられる。人は何歳からでも生まれかわれると、私は信じています。死んでから、生まれかわるんじゃない。生きている間に、生まれかわる。そのための住まいを、学びなおす場所を、働く場所を、なければ自分たちでつくる。</p>
       <p>支えられた人が立ち上がり、やがて誰かを支える人になる。負の連鎖を止め、愛の循環社会をつくる。その未来を一緒につくる仲間を、私は「チーム生まれかわる」と呼んでいます。</p>
     </section>
+    <figure class="pc-photo"><img src="../img/mother.jpg" alt="母と幼い頃の黒川"><figcaption>母と。</figcaption></figure>
     <div class="pc-sign"><span>黒川洋司</span><div class="seal" aria-hidden="true">黒川</div></div>
     <section class="pc-sec">
       <div class="pc-box">
@@ -199,6 +221,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <p>黒川さんの活動に共感していただける方は、ぜひ黒川さんの活動をサポートしてください。</p>
         <p class="who">呼びかけ人（氏名：仮）</p>
       </div>
+      <figure class="pc-wide"><img src="../img/team.jpg" alt="良心塾の仲間たち"><figcaption>仲間と。</figcaption></figure>
     </section>
 
     <section class="pc-sec">

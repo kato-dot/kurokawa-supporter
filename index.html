@@ -74,6 +74,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa-bio{display:grid;grid-template-columns:1fr;gap:20px}
 @media (min-width:560px){.pa-bio{grid-template-columns:1fr 168px;align-items:start}}
 .pa-bio .ph{aspect-ratio:4/5;width:min(100%,180px)}
+.pa-bio .photo{width:min(100%,180px);aspect-ratio:4/5;object-fit:cover;border-radius:2px;display:block;justify-self:start}
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 10px;margin:0}
+.strip figure{margin:0;display:grid;gap:5px}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;display:block}
+.strip figcaption{font-family:var(--gothic);font-size:12px;line-height:1.5;opacity:.75}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px;max-width:420px}
+.pair figure{margin:0;display:grid;gap:5px}
+.pair img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px;display:block}
+.pair figcaption{font-family:var(--gothic);font-size:12px;line-height:1.5;opacity:.75}
 .pa-tl{display:grid;grid-template-columns:4.6em 1fr;gap:10px 14px}
 .pa-tl dt{font-family:var(--mincho-a);font-weight:800;color:var(--pa-red);font-variant-numeric:tabular-nums;font-size:18px;line-height:1.7}
 .pa-tl dd{line-height:1.8}
@@ -131,6 +140,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pb-media{display:grid;grid-template-columns:1fr;gap:16px}
 @media (min-width:560px){.pb-media{grid-template-columns:1fr 200px;align-items:start}}
 .pb-media .ph{aspect-ratio:4/3;width:min(100%,220px)}
+.pb-media .photo{width:min(100%,200px);aspect-ratio:4/5;object-fit:cover;border-radius:3px;display:block;justify-self:start}
 .pb-cta{display:grid;gap:16px;justify-items:start}
 .pb-foot{padding-block:36px 64px;border-top:2px solid var(--pb-ink);font-size:13px;color:var(--pb-sub);display:grid;gap:22px}
 .pb-foot h3{font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--pb-ink)}
@@ -144,6 +154,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pc-hero h1{font-family:var(--hand);font-weight:600;font-size:clamp(30px,7.6vw,46px);line-height:1.35;margin-top:10px}
 .pc-hero .sub{font-size:19px;line-height:1.7;margin-top:8px}
 .pc-hero .ph{aspect-ratio:4/5;width:min(100%,140px)}
+.pc-hero .photo{width:min(100%,150px);aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block}
+.pc-photo{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;max-width:36em}
+.pc-photo img{width:120px;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block}
+.pc-photo figcaption{font-size:15px;line-height:1.7}
+.pc-wide{margin:0;display:grid;gap:6px;max-width:36em}
+.pc-wide img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.pc-wide figcaption{font-family:var(--gothic);font-size:12px;opacity:.75}
 .pc-letter{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 33px,var(--pc-line) 33px,var(--pc-line) 34px);background-origin:content-box;background-clip:content-box;padding-block:34px 0;display:grid;gap:34px;max-width:36em}
 .pc-letter p{font-size:17px;line-height:34px;letter-spacing:.01em}
 .pc-sign{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding-block:20px 8px;font-size:22px;font-weight:600}
@@ -151,6 +168,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pc-box{background:var(--pc-panel);padding:20px 22px;border-radius:4px;display:grid;gap:10px;font-size:16px;line-height:1.9}
 .pc-box .who{font-family:var(--gothic);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--pc-sub)}
 .pc-sec{padding-block:36px;border-top:1px solid var(--pc-line);display:grid;gap:18px}
+.pc-letter+.pc-photo{margin-top:28px}
 .pc-sec h2{font-family:var(--hand);font-size:clamp(22px,5vw,28px);font-weight:600;line-height:1.5}
 .pc-terms{display:grid;gap:10px;font-size:16px}
 .pc-terms li{display:grid;grid-template-columns:5em 1fr;gap:12px;line-height:1.8}
@@ -167,13 +185,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 </head>
 <body>
 <div class="bar" role="region" aria-label="叩き台の切り替え">
-  <span class="bar__label">叩き台 v0.9</span>
+  <span class="bar__label">叩き台 v1.0</span>
   <span class="bar__btns">
     <button type="button" data-pat="a" aria-pressed="true">案A 漢</button>
     <button type="button" data-pat="b" aria-pressed="false">案B 実績</button>
     <button type="button" data-pat="c" aria-pressed="false">案C 手紙</button>
   </span>
-  <span class="bar__note">写真は仮。申し込みボタンは良心塾のマンスリーサポーター（コングラント）の申し込みフォームに直接つながっています。「要確認」はTEDx・テレビの発言から起こした部分。</span>
+  <span class="bar__note">写真を入れました（黒川さん側提供）。申し込みボタンは良心塾のマンスリーサポーター（コングラント）の申し込みフォームに直接つながっています。「要確認」はTEDx・テレビの発言から起こした部分。</span>
 </div>
 
 <!-- ============ 案A 漢 ============ -->
@@ -214,7 +232,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
           <p>35歳の冬、女手ひとつで育ててくれた母が脳梗塞で倒れ、意識が戻らないまま59歳で急死した。何ひとつ親孝行できなかった自分が情けなく、「残りの人生は、おかんに恥ずかしくない生き方をする」と決めた。靴を揃え、トイレを掃除し、本を読み、学び直すところから始めた。</p>
           <p>2013年、日本財団「職親プロジェクト」の発足メンバーに。大阪・福島区の自分の美容室で、少年院や刑務所を出た若者を雇い始めた。2015年、良心塾をつくり、住む場所と仕事と学びを、自分の手で用意し続けてきた。</p>
         </div>
-        <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+        <img class="photo" src="img/portrait.jpg" alt="黒川洋司">
+      </div>
+      <div class="pair">
+        <figure><img src="img/mother.jpg" alt="母と幼い頃の黒川"><figcaption>母と。</figcaption></figure>
+        <figure><img src="img/young.jpg" alt="若い頃の黒川"><figcaption>若い頃。</figcaption></figure>
       </div>
       <p class="note">経歴の細部はTEDx講演の文字起こしによる。<span class="tag">要確認</span></p>
     </section>
@@ -245,6 +267,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <p>18歳で少年院を出て美容室に入った少年は、嘘と失敗を繰り返した。黒川は寮で一緒に暮らし、叱り、待った。後輩が入ってきた時、彼は教える側に回り、初めて責任というものを覚えた。「心底、変わりたいと言う。その気持ちを恐れない。俺も最後まで付き合う。」</p>
         <p>17歳の少女がいた。義父の暴力から逃げ、夜の街で使われ、少年院に入った。腕には自傷の痕が100本以上。少年院に講演に来た黒川に、彼女は助けを求めた。最初は反発ばかり。それでも「見返りを求めない大人」に初めて出会い、人を信じられるようになった。彼女はのちに黒川の養女になり、いまは2児の母として、居酒屋「結笑和」の女将を務め、2026年3月には株式会社良心塾の代表取締役に就いた。</p>
         <p>「人は何度でも、人生をやり直せる」。塾長から教わった言葉だと、彼女は言う。</p>
+      </div>
+      <div class="strip">
+        <figure><img src="img/yuniwa.jpg" alt="結笑和の厨房に立つ黒川と塾生"><figcaption>結笑和（ゆにわ）の厨房で。</figcaption></figure>
+        <figure><img src="img/farm.jpg" alt="畑で鍬をふるう黒川"><figcaption>畑で。</figcaption></figure>
+        <figure><img src="img/kakogawa.jpg" alt="講演する黒川"><figcaption>講演。</figcaption></figure>
+        <figure><img src="img/ksp.jpg" alt="練習帳の使い方講座"><figcaption>練習帳の使い方講座（2026年10月）。</figcaption></figure>
       </div>
       <p class="note">テレビ大阪（2021・2022年）、関西テレビ「報道ランナー」（2022年）、TEDx講演、良心塾サイトの記述による。ご本人たちの掲載可否と表現は黒川さんに確認。</p>
     </section>
@@ -366,7 +394,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
           <p>黒川洋司（1971年、大阪生まれ）は、少年期からの非行歴を持ち、28歳で美容室を起業して成功したのち、35歳のときの母の急死を機に生き方を変えた人物です。2013年、お好み焼き「千房」の中井会長の呼びかけで始まった日本財団「職親プロジェクト」（法務省との官民連携）に発足メンバーとして参加し、大阪・福島区の自身の美容室で少年院出院者・刑務所出所者の雇用を始めました。</p>
           <p>2015年、大阪に更生支援施設ヒューマンハーバー大阪を設立し、教育部門として良心塾を開校。仕事を用意するだけでは更生は続かないと考え、住居支援と基礎教育を先駆けて始めました。2017年に株式会社良心塾へ社名変更。2021年に再チャレンジ居酒屋「結笑和（ゆにわ）」を開き、同年TEDxAwajiに登壇。2025年に一般社団法人りょうしん塾を設立し、現在は同法人の理事・塾長として活動しています。</p>
         </div>
-        <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+        <img class="photo" src="img/portrait.jpg" alt="黒川洋司">
       </div>
       <p class="note">経歴の細部はTEDx講演の文字起こしと良心塾サイトの記述による。<span class="tag">要確認</span></p>
     </section>
@@ -412,6 +440,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <p>良心塾に通った若者は延べ40人（2021年時点）。美容室では少年院出院者を14人雇用し、5人が働き続け、2人が正社員になっています（2022年時点）。</p>
         <p>18歳で少年院を出て美容室に入った少年は、嘘と失敗を繰り返しました。黒川塾長は寮で寝食を共にして指導を続け、後輩が入ると彼は教える側に回り、責任感が芽生えました。</p>
         <p>義父の暴力から逃れ、夜の街で利用されて少年院に入った17歳の少女は、少年院での黒川塾長の講演をきっかけに良心塾へ。反発を繰り返しながら「見返りを求めない大人」に出会い、人を信じられるようになりました。のちに黒川塾長の養女となり、現在は2児の母として居酒屋「結笑和」の女将を務め、2026年3月に株式会社良心塾の代表取締役に就任しています。</p>
+      </div>
+      <div class="strip">
+        <figure><img src="img/kakogawa.jpg" alt="講演する黒川塾長"><figcaption>講演の様子。</figcaption></figure>
+        <figure><img src="img/kamikawa.jpg" alt="2017年、上川法務大臣の視察"><figcaption>2017年12月、上川陽子法務大臣（当時）が良心塾を視察。</figcaption></figure>
+        <figure><img src="img/yuniwa.jpg" alt="結笑和の厨房"><figcaption>再チャレンジ居酒屋「結笑和（ゆにわ）」。</figcaption></figure>
+        <figure><img src="img/farm.jpg" alt="畑で作業する黒川塾長"><figcaption>農業を通じた就労と心身の回復。</figcaption></figure>
       </div>
       <p class="note">テレビ大阪（2021・2022年）、関西テレビ「報道ランナー」（2022年）、TEDx講演、良心塾サイトの記述による。ご本人たちの掲載可否と表現は黒川さんに確認。</p>
     </section>
@@ -513,7 +547,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <h1>仲間の皆さんへ</h1>
         <p class="sub">頼みがあります。</p>
       </div>
-      <div class="ph">写真<br>黒川洋司<br>（差し替え）</div>
+      <img class="photo" src="img/portrait.jpg" alt="黒川洋司">
     </section>
 
     <section class="pc-letter">
@@ -526,6 +560,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <p>過去は消せません。でも、これからの生き方は変えられる。人は何歳からでも生まれかわれると、私は信じています。死んでから、生まれかわるんじゃない。生きている間に、生まれかわる。そのための住まいを、学びなおす場所を、働く場所を、なければ自分たちでつくる。</p>
       <p>支えられた人が立ち上がり、やがて誰かを支える人になる。負の連鎖を止め、愛の循環社会をつくる。その未来を一緒につくる仲間を、私は「チーム生まれかわる」と呼んでいます。</p>
     </section>
+    <figure class="pc-photo"><img src="img/mother.jpg" alt="母と幼い頃の黒川"><figcaption>母と。</figcaption></figure>
     <div class="pc-sign"><span>黒川洋司</span><div class="seal" aria-hidden="true">黒川</div></div>
     <p class="note">前半はTEDx講演（2021年）・テレビの発言から、後半は黒川さん自身の「生まれかわり宣言」から起こした下書き。言い回しは黒川さんに確認。<span class="tag">要確認</span></p>
 
@@ -535,6 +570,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
         <p>黒川さんの活動に共感していただける方は、ぜひ黒川さんの活動をサポートしてください。</p>
         <p class="who">呼びかけ人（氏名：仮）</p>
       </div>
+      <figure class="pc-wide"><img src="img/team.jpg" alt="良心塾の仲間たち"><figcaption>仲間と。</figcaption></figure>
     </section>
 
     <section class="pc-sec">
