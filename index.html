@@ -621,7 +621,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 (function(){
   /* ===== 決済リンク（Squareサブスクリプションの「お会計リンク」・一口 月1万円）=====
      URLをここに貼るだけで、全ページの申し込みボタンが直接つながる。空のうちは仮置き。 */
-  var LINK="https://congrant.com/project/ryoshin-jyuku/182/form/step1?method=card&type=monthly&price=10000";
+  var LINK="https://congrant.com/project/ryoshin-jyuku/182/form/step1?method=card&type=monthly&item_id=10215";
   var ks=document.querySelectorAll('[data-kuchi]');
   for(var j=0;j<ks.length;j++){
     if(LINK){ks[j].href=LINK;ks[j].target='_blank';ks[j].rel='noopener';}
