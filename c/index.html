@@ -196,6 +196,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .pa .corp{background:var(--pa-panel);color:var(--pa-ink)}
 .pb .corp{background:var(--pb-panel);color:var(--pb-ink)}
 .pc .corp{background:var(--pc-panel);color:var(--pc-ink)}
+.tv{display:grid;gap:6px;padding:18px 20px;border-radius:4px;text-decoration:none;max-width:36em;transition:opacity .15s}
+.tv:hover{opacity:.9}
+.tv__eyebrow{font-family:var(--gothic);font-size:12px;letter-spacing:.06em;font-weight:700}
+.tv__title{font-size:18px;font-weight:700;line-height:1.55}
+.tv__meta{font-family:var(--gothic);font-size:12px;opacity:.75}
+.tv__play{font-family:var(--gothic);font-weight:700;font-size:14px;margin-top:6px;padding:7px 14px;border:1px solid currentColor;border-radius:999px;width:fit-content}
+.pa .tv{background:var(--pa-ink);color:var(--pa-bg)} .pa .tv__title{font-family:var(--mincho-a)} .pa .tv__eyebrow{color:var(--bar-acc)}
+.pb .tv{background:var(--pb-ink);color:#fff} .pb .tv__title{font-family:var(--mincho-b)} .pb .tv__eyebrow{color:#e8c46a}
+.pc .tv{background:var(--pc-ink);color:var(--pc-bg)} .pc .tv__eyebrow{color:#e9b8a6}
+.voices{display:grid;grid-template-columns:1fr;gap:10px}
+@media (min-width:560px){.voices{grid-template-columns:1fr 1fr}}
+.voices li{padding:12px 14px;border-radius:3px;font-size:14.5px;line-height:1.8}
+.pa .voices li{background:var(--pa-panel)}
+.pb .voices li{background:var(--pb-panel)}
+.pc .voices li{background:var(--pc-panel);font-size:15.5px}
+.voices__src{font-family:var(--gothic);font-size:12px;opacity:.72;line-height:1.7}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -224,11 +240,37 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
     <figure class="pc-photo"><img src="../img/mother.jpg" alt="母と幼い頃の黒川"><figcaption>母と。</figcaption></figure>
     <div class="pc-sign"><span>黒川洋司</span><div class="seal" aria-hidden="true">黒川</div></div>
     <section class="pc-sec">
+      <a class="tv" href="https://www.youtube.com/watch?v=mqrVor3FDvM" target="_blank" rel="noopener">
+        <span class="tv__eyebrow">YouTube「街録ch〜あなたの人生、教えて下さい〜」で取り上げられました</span>
+        <span class="tv__title">生い立ちから、<br>良心塾を始めた理由まで。<br>この手紙に書いたことを、<br>動画でも話しています。</span>
+        <span class="tv__meta">2026年10月15日公開</span>
+        <span class="tv__play">▶ 動画を見る</span>
+      </a>
+    </section>
+
+    <section class="pc-sec">
       <div class="pc-box">
         <p class="who">呼びかけ人より</p>
         <p>黒川さんの活動に共感していただける方は、ぜひ黒川さんの活動をサポートしてください。</p>
       </div>
       <figure class="pc-wide"><img src="../img/team.jpg" alt="良心塾の仲間たち"><figcaption>仲間と。</figcaption></figure>
+    </section>
+
+    <section class="pc-sec">
+      <h2>動画を観てくれた人の声</h2>
+      <ul class="voices">
+          <li>素晴らしいかたです。黒川さん、これからも頑張ってください！応援してます！</li>
+          <li>全く興味なかったジャンルでしたが、話に引き込まれて最後まで拝見しました。</li>
+          <li>黒川さんは愛のある人だなあと思います。いつでも人は生まれ変われる。循環。ご縁。利他。この輪が広まれば生きづらい人が減りますね</li>
+          <li>すごい人やな。養女にまで出来るのは、相当な覚悟がないとできひんことや。結局、こういう人が増えへんと、厳罰化だけではどうにもならんのよな。</li>
+          <li>いい話が聞けた。黒川さん応援するわ。</li>
+          <li>この方の根っこに感じる良心や愛は母親の無償の愛が根底にあるんですね。</li>
+          <li>更生支援、辛いことも多いんだと思うけど、頑張られててすごいです</li>
+          <li>人間味溢れる深い人だな！視聴していて、素晴らしい時間でした。</li>
+          <li>勉強に成ります。僧侶ですが、檀家様にも話させて頂きます。</li>
+          <li>今やっていることが全て！頑張って下さい</li>
+      </ul>
+      <p class="voices__src">YouTube（街録ch）に寄せられたコメントから抜粋しました。投稿者のお名前は伏せています。</p>
     </section>
 
     <section class="pc-sec">
@@ -270,6 +312,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <div class="block">
         <h3>黒川洋司を知る</h3>
         <ul class="links">
+          <li><a href="https://www.youtube.com/watch?v=mqrVor3FDvM" target="_blank" rel="noopener">街録ch〜あなたの人生、教えて下さい〜「少年院出院者の自立支援施設『良心塾』塾長 黒川洋司」（2026年）</a></li>
           <li><a href="https://m.youtube.com/watch?v=UBOvBAClLI0" target="_blank" rel="noopener">TEDxAwaji「世界平和はお母さんの幸せから始まる」</a></li>
           <li><a href="https://youtu.be/5wo2cXKSneU" target="_blank" rel="noopener">関西テレビ「報道ランナー」少年法改正から3カ月 罪を犯した少年たち（2022年）</a></li>
           <li><a href="https://youtu.be/hgrJfcqkdWQ" target="_blank" rel="noopener">テレビ大阪　若者の自殺もなくしたい… 大阪下町の「おせっかい食堂」（2021年）</a></li>
