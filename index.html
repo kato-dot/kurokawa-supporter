@@ -192,6 +192,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 .tv:hover{opacity:.9}
 .tv__eyebrow{font-family:var(--gothic);font-size:12px;letter-spacing:.06em;font-weight:700}
 .tv__title{font-size:18px;font-weight:700;line-height:1.55}
+.tv__stats{display:flex;flex-wrap:wrap;gap:2px 20px;margin-top:6px;font-family:var(--gothic);font-size:13px;line-height:1.3}
+.tv__stats span{white-space:nowrap}
+.tv__stats b{font-size:26px;font-weight:800;margin-right:5px;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.pa .tv__stats b{font-family:var(--mincho-a)} .pb .tv__stats b{font-family:var(--mincho-b)}
 .tv__meta{font-family:var(--gothic);font-size:12px;opacity:.75}
 .tv__play{font-family:var(--gothic);font-weight:700;font-size:14px;margin-top:6px;padding:7px 14px;border:1px solid currentColor;border-radius:999px;width:fit-content}
 .pa .tv{background:var(--pa-ink);color:var(--pa-bg)} .pa .tv__title{font-family:var(--mincho-a)} .pa .tv__eyebrow{color:var(--bar-acc)}
@@ -209,7 +213,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
 </head>
 <body>
 <div class="bar" role="region" aria-label="叩き台の切り替え">
-  <span class="bar__label">v1.7</span>
+  <span class="bar__label">v1.8</span>
   <span class="bar__btns">
     <button type="button" data-pat="a" aria-pressed="true">案A 漢</button>
     <button type="button" data-pat="b" aria-pressed="false">案B 実績</button>
@@ -242,7 +246,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <a class="tv" href="https://www.youtube.com/watch?v=mqrVor3FDvM" target="_blank" rel="noopener">
         <span class="tv__eyebrow">YouTube「街録ch〜あなたの人生、教えて下さい〜」に出演</span>
         <span class="tv__title">生い立ちから、<br>良心塾を始めた理由まで。<br>本人が、包み隠さず語った。</span>
-        <span class="tv__meta">2026年10月15日公開</span>
+        <span class="tv__stats"><span><b>20万回</b>視聴</span><span><b>191万人</b>チャンネル登録者</span></span>
+        <span class="tv__meta">2026年10月15日公開・数字は10月21日時点</span>
         <span class="tv__play">▶ 動画を見る</span>
       </a>
     </section>
@@ -450,7 +455,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <a class="tv" href="https://www.youtube.com/watch?v=mqrVor3FDvM" target="_blank" rel="noopener">
         <span class="tv__eyebrow">YouTube「街録ch〜あなたの人生、教えて下さい〜」で取り上げられました</span>
         <span class="tv__title">生い立ちから、良心塾を始めた理由、これからの教育まで。黒川塾長本人が語っています。</span>
-        <span class="tv__meta">2026年10月15日公開</span>
+        <span class="tv__stats"><span><b>20万回</b>視聴</span><span><b>191万人</b>チャンネル登録者</span></span>
+        <span class="tv__meta">2026年10月15日公開・数字は10月21日時点</span>
         <span class="tv__play">▶ 動画を見る</span>
       </a>
     </section>
@@ -665,7 +671,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bar-acc);outline-of
       <a class="tv" href="https://www.youtube.com/watch?v=mqrVor3FDvM" target="_blank" rel="noopener">
         <span class="tv__eyebrow">YouTube「街録ch〜あなたの人生、教えて下さい〜」で取り上げられました</span>
         <span class="tv__title">生い立ちから、<br>良心塾を始めた理由まで。<br>この手紙に書いたことを、<br>動画でも話しています。</span>
-        <span class="tv__meta">2026年10月15日公開</span>
+        <span class="tv__stats"><span><b>20万回</b>視聴</span><span><b>191万人</b>チャンネル登録者</span></span>
+        <span class="tv__meta">2026年10月15日公開・数字は10月21日時点</span>
         <span class="tv__play">▶ 動画を見る</span>
       </a>
     </section>
